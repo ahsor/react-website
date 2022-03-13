@@ -1,0 +1,103 @@
+:root {
+    --animate-delay: 0.5s;
+}
+
+.animate__delay{
+    animation-delay: var(--animate-delay);
+}
+
+.homeSection{ 
+    width:100%;
+}
+.mainBanner{ margin-bottom: 130px;}
+.mainBanner img{
+    width:100%; 
+    min-width:600px;
+}
+.content{
+    display: flex;
+    width:1200px; margin: auto;
+    margin-bottom: 200px;
+}
+.content h2{ font-size:44px; }
+.content h3{ font-size:44px; }
+.content p{ line-height: 2rem; }
+
+.box12{ position: relative;}
+.box12 h2{ position: relative; left: -30%; }
+.box12 h3{  
+    position: relative;
+    width: 90%; left:5%;
+}
+.box12 p{ 
+    position: relative;
+    width:90%; left:5%;
+}
+
+ 
+.box21{ width: 40%;}
+.box21 h2{  
+    white-space: nowrap;
+    position: absolute; 
+}
+.box21 h3{ position: relative; top:100px;
+    text-align:  right; width:94%;
+}
+.box21 p{ position: relative; top:100px;
+    width: 94%; 
+    text-align:  right;
+}
+
+.content03{ 
+    justify-content: space-between;
+    height: 800px;
+}
+.box32{ align-self: center;}
+.box33{ align-self: flex-end;}
+
+.content04{ flex-direction: column;
+    text-align: center;
+    width:800px; 
+}
+
+@media screen and ( max-width:1250px) {   
+    .content{ width: 100%;}
+}
+
+@media screen and ( max-width:960px) {
+    .mainBanner{ width: 100%; height: 450px; 
+            overflow: hidden;
+            position: relative;
+    }
+    .mainBanner img{ height: 450px; width:auto;
+            position: absolute;
+            left: 50%; 
+            transform: translateX(-40%);
+    }
+
+    .content{ flex-direction: column;}
+    .box11{ width: 100%; }
+    .box11 img{ width: 100%; }
+    .box12 { width: 100%; }
+    .box12 h2{ position: static; margin:50px auto; 
+            text-align: center;
+    }
+    .box12 h3{  position: static; margin: auto;  }
+    .box12 p{ position: static; margin: auto;   }
+    .box21{ width: 90%; margin: auto;}
+    .box21 h2{  
+        white-space:normal; position: static;
+    }
+    .box21 h3{ position: static;  
+        text-align:  left; width:100%;
+    }
+    .box21 p{ position: static;  
+        width: 100%; 
+        text-align:  left;
+    }
+    .box22 img{ width:100%; }
+
+    .content04{  width : 100% }
+}
+
+ 
